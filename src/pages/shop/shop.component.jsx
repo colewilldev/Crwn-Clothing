@@ -13,7 +13,7 @@ class ShopPage extends React.Component {
 
   render() {
     return this.state.collection.map(({ id, ...otherCollectionsProps }) => (
-      <CollectionPreview id={id} {...otherCollectionsProps} />
+      <CollectionPreview key={id} {...otherCollectionsProps} />
     ));
   }
 }
